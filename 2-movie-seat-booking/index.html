@@ -23,18 +23,18 @@
 
       <!-- Seat state -->
       <ul class="states">
-        <li class="seat-state" id="N/A">
-          <div></div>
+        <li class="state" id="N/A">
+          <div class="seat"></div>
           <p>N/A</p>
         </li>
 
-        <li class="seat-state" id="selected">
-          <div></div>
+        <li class="state" id="selected">
+          <div class="seat selected"></div>
           <p>Selected</p>
         </li>
 
-        <li class="seat-state" id="occupied">
-          <div></div>
+        <li class="state" id="occupied">
+          <div class="seat occupied"></div>
           <p>Occupied</p>
         </li>
       </ul>
@@ -68,18 +68,8 @@
           <div class="seat"></div>
           <div class="seat"></div>
           <div class="seat"></div>
-          <div class="seat"></div>
-          <div class="seat"></div>
-          <div class="seat"></div>
-          <div class="seat"></div>
-        </div>
-        <div class="row">
-          <div class="seat"></div>
-          <div class="seat"></div>
-          <div class="seat"></div>
-          <div class="seat"></div>
-          <div class="seat"></div>
-          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
           <div class="seat"></div>
           <div class="seat"></div>
         </div>
@@ -98,19 +88,30 @@
           <div class="seat"></div>
           <div class="seat"></div>
           <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
           <div class="seat"></div>
           <div class="seat"></div>
           <div class="seat"></div>
           <div class="seat"></div>
         </div>
       </div>
-
       <!-- ---------------- -->
 
       <!-- Selected seats and total price -->
-      <p class="seats-prrices" idseats-prrices>
-        You have selected <span id="selected-seats">0</span> seats for a price
-        of $<span id="total-price">0</span>
+      <p class="text">
+        You have selected <span id="count">0</span> seats for a price of $<span
+          id="total"
+          >0</span
+        >
       </p>
       <!-- ---------------- -->
     </div>
