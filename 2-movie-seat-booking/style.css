@@ -103,8 +103,8 @@ body {
   filter: drop-shadow(0 4px 6px #e2e2e49e);
 }
 .cenima-screen {
-  width: 232px;
-  height: 60px;
+  width: 220px;
+  height: 55px;
   background-color: var(--white-color);
   /* border: 1.2px solid var(--grey-color); */
   /* box-shadow: 0 4px 12px 0 #e2e2e49e; */
