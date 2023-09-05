@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+:root {
+  --main-color: #242333;
+  --list-color: #201f2e;
+  --list-text-color: #777777;
+  --seat-color: #444451;
+  --selected-color: #6feaf6;
+  --white-color: #ffffff;
+  --grey-color: #e2e2e4;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+
+/* --- movie options --- */
+.movies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 18px;
+}
+
+.movie-options {
+  border: none;
+  border-radius: 7px;
+  padding: 6px 16px;
+  font-size: 16px;
+  font-family: inherit;
+  appearance: none;
+}
+/* ------------------- */
+
+/* --- Seat state --- */
+.states-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+
+  border-radius: 7px;
+  padding: 8px 28px;
+
+  list-style: none;
+  font-size: 14px;
+
+  background-color: var(--list-color);
+  color: var(--list-text-color);
+}
+
+.state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.state p {
+  align-self: flex-end;
+  line-height: 0.7;
+}
+/* ------------------- */
+
+/* --- Seats --- */
+.seat {
+  border-radius: 10px 10px 0 0;
+  width: 16px;
+  height: 13px;
+  background-color: var(--seat-color);
+}
+
+.row .seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.seat.selected {
+  background-color: var(--selected-color);
+}
+.seat.occupied {
+  background-color: var(--white-color);
+}
+/* ------------------- */
+
+/* --- Cenima Erea --- */
+.cenima-screen-wrap {
+  filter: drop-shadow(0 4px 6px #e2e2e49e);
+}
+.cenima-screen {
+  width: 232px;
+  height: 60px;
+  background-color: var(--white-color);
+  /* border: 1.2px solid var(--grey-color); */
+  /* box-shadow: 0 4px 12px 0 #e2e2e49e; */
+  margin-bottom: 28px;
+  clip-path: polygon(0% 0%, 100% 0%, 97% 100%, 3% 100%);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+.row :nth-child(2) {
+  margin-right: 16px;
+}
+.row :nth-child(6) {
+  margin-right: 16px;
+}
+
+/* ------------------- */
+
+/* --- text --- */
+.text span {
+  color: var(--selected-color);
+}
