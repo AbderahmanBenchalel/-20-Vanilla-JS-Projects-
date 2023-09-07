@@ -10,3 +10,7 @@ Display movie choices and seats in a theater to select from in order to purchase
 - User can not select occupied seats
 - Number of seats and price will update
 - Save seats, movie and price to local storage so that UI is still populated on refresh
+
+## Note
+
+I followed OOP approach in this app
