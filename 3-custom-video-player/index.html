@@ -17,24 +17,44 @@
 
       <!-- ------------ -->
 
-      <video class="video" src="Ilyas Mao - Parachutes (Acapella Song)_HD.mp4">
+      <video
+        class="video"
+        src="Ilyas Mao - Parachutes (Acapella Song)_HD.mp4"
+        controls
+      >
         <p>Your browser doesn't support this video's format</p>
       </video>
 
       <!-- ------------ -->
 
-      <div class="progress-bar">
-        <input type="range" min="0" max="60" value="0" step="1" />
-      </div>
+      <input
+        class="progress-bar"
+        type="range"
+        min="0"
+        max="100"
+        value="50"
+        step="1"
+      />
 
       <!-- ------------ -->
 
       <div class="controls">
-        <button class="rewind"></button>
-        <button class="play-pause"></button>
-        <button class="fast-forward"></button>
-        <span class="timer">00:00</span>
+        <button class="rewind">
+          <iconify-icon icon="lucide:rewind"></iconify-icon>
+        </button>
+
+        <button class="play-pause">
+          <iconify-icon icon="lucide:play"></iconify-icon>
+          <!-- <iconify-icon icon="lucide:pause"></iconify-icon> -->
+        </button>
+
+        <button class="fast-forward">
+          <iconify-icon icon="lucide:fast-forward"></iconify-icon>
+        </button>
+        <!-- <span class="timer">00:00</span> -->
       </div>
     </div>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   </body>
 </html>
