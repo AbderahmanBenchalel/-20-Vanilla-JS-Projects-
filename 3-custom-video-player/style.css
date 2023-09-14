@@ -22,6 +22,7 @@ body {
   width: 50%;
   position: relative;
   box-shadow: 0 30px 45px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
 }
 
 .video {
@@ -30,59 +31,22 @@ body {
 }
 
 /* ------------------------------ */
-/* Styling progress bar */
-.progress-bar[type="range"] {
-  position: absolute;
-  bottom: 60px;
-  width: 100%;
-  height: 2px;
-  appearance: none;
-  -webkit-appearance: none;
-  z-index: 4;
-  background-color: rgba(255, 255, 255, 0.2);
-  background-image: linear-gradient(#ffdd26, #ffdd26);
-  background-repeat: no-repeat;
-  background-size: 50% 100%;
-  transition: all 0.2s;
-  cursor: pointer;
-}
-
-.progress-bar[type="range"]:hover::-webkit-slider-thumb {
-  height: 6px;
-  width: 6px;
-  transition: all 0.01s;
-  transform: translateY(-2px);
-}
-.progress-bar[type="range"]:hover {
-  height: 6px;
-  transition: all 0.2s;
-}
-
-.progress-bar[type="range"]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 2px;
-  appearance: none;
-  -webkit-appearance: none;
-}
-
-.progress-bar[type="range"]::-webkit-slider-thumb {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 4px;
-  height: 4px;
-  background-color: #ffff;
-  border: none;
-  border-radius: 50px;
-  margin: 0;
-  transform: translateY(-1px);
-  cursor: pointer;
-}
 
 /* ------------------------------ */
-.controls {
+.controls-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   position: absolute;
-  z-index: 3;
+  transition: bottom 0.2s;
+  bottom: -64px;
+}
+.controls-box.hide {
   bottom: 0;
+  transition: bottom 0.2s;
+}
+.controls {
+  z-index: 3;
   width: 100%;
   height: 60px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -102,8 +66,22 @@ body {
   justify-content: center;
   border: none;
   background-color: transparent;
-  color: #ffdd26;
   cursor: pointer;
+}
+
+.play {
+  color: #ffdd26;
+}
+.pause {
+  color: #fff;
+  display: none;
+}
+
+.icon-switch .play {
+  display: none;
+}
+.icon-switch .pause {
+  display: block;
 }
 
 .play-pause {
