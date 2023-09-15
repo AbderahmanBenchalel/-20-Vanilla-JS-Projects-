@@ -8,8 +8,8 @@ Custom video player using the HTML5 video element and it's JavaScript API with a
 - Play/pause
 - Rewind/fast-forward
 - Video progress bar
-- Set progress bar time
-- Display time in mins and seconds
+- Sound bar
+- ON and OFF sound button
 
 ## Note
 
