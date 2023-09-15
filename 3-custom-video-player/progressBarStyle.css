@@ -11,13 +11,13 @@
   background-image: linear-gradient(#ffdd26, #ffdd26);
   background-repeat: no-repeat;
   background-size: 0% 100%;
-  transition: width 0.2s, height 0.2s;
+  transition: height 0.2s;
   cursor: pointer;
 }
 
 .progress-bar[type="range"]:hover {
   height: 6px;
-  transition: width 0.2s, height 0.2s;
+  transition: height 0.2s;
 }
 
 .progress-bar[type="range"]::-webkit-slider-runnable-track {
@@ -97,4 +97,45 @@
   width: 6px;
   margin-top: -2px;
   transform: translateX(-0.5px);
+}
+
+/* Styling sound bar */
+
+.volume {
+  height: 2px;
+  width: 55%;
+  border-radius: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  z-index: 4;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: linear-gradient(#ffdd26, #ffdd26);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: height 0.15s;
+  cursor: pointer;
+}
+
+.volume:hover {
+  height: 6px;
+  transition: height 0.15s;
+}
+
+.volume::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 2px;
+  width: 2px;
+}
+
+.volume::-moz-range-thumb {
+  appearance: none;
+  -moz-appearance: none;
+}
+
+.volume::-ms-thumb {
+  appearance: none;
+  -ms-appearance: none;
 }

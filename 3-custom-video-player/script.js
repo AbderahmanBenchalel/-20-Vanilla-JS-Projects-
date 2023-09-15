@@ -5,6 +5,9 @@ const video = document.querySelector(".video");
 const playButton = document.querySelector(".play-pause");
 const rewindButton = document.querySelector(".rewind");
 const forwardButton = document.querySelector(".fast-forward");
+const volume = document.querySelector(".volume");
+const fullScreenButton = document.querySelector(".full-screen");
+const soundButton = document.querySelector(".sound");
 
 //////////////////////////////
 // Handling application events.
@@ -89,4 +92,39 @@ function updateVideoProgress(video, progressBar) {
   video.currentTime = (progressBar.value / 100) * video.duration;
 }
 
-// TESTING
+/////////////////////////////////////
+////// More features added
+
+////// Handling sound volume change by user input.
+volume.addEventListener("input", (event) => {
+  event.target.style.backgroundSize = `${event.target.value}% 100%`;
+  video.volume = event.target.value / 100;
+
+  // Changing sound icon when volume bar value is 0.
+  if (event.target.value === "0") {
+    soundButton.classList.add("icon-switch");
+  } else {
+    soundButton.classList.remove("icon-switch");
+  }
+});
+
+////// Handling view fullscreen mode when click
+fullScreenButton.addEventListener("click", (event) => {
+  video.requestFullscreen();
+});
+
+////// Handling sound button ON and OFF
+soundButton.addEventListener("click", (event) => {
+  const sound = event.currentTarget;
+  sound.classList.toggle("icon-switch");
+
+  if (sound.classList.contains("icon-switch")) {
+    volume.value = 0;
+    volume.style.backgroundSize = `${volume.value}% 100%`;
+    video.volume = volume.value / 100;
+    return;
+  }
+  volume.value = 100;
+  volume.style.backgroundSize = `${volume.value}% 100%`;
+  video.volume = volume.value / 100;
+});

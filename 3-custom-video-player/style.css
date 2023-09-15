@@ -39,10 +39,10 @@ body {
   width: 100%;
   position: absolute;
   transition: bottom 0.2s;
-  bottom: -64px;
+  bottom: 0;
 }
 .controls-box.hide {
-  bottom: 0;
+  bottom: -64px;
   transition: bottom 0.2s;
 }
 .controls {
@@ -51,29 +51,62 @@ body {
   height: 60px;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(6px);
+  padding: 0 20px;
 
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.sound-controls {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
+  width: 15%;
+}
+.playback-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 16px;
+  margin: 0 auto;
+  padding-right: 74.75px;
 }
 
 .play-pause,
 .rewind,
-.fast-forward {
+.fast-forward,
+.full-screen,
+.sound {
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  color: #fff;
+  transition: color 0.1s;
+  font-size: 14px;
 }
 
-.play {
-  color: #ffdd26;
+.play-pause:hover,
+.rewind:hover,
+.fast-forward:hover,
+.full-screen:hover,
+.sound:hover {
+  /* color: rgba(255, 221, 38, 0.5); */
+  color: #f3e9b8;
+  transition: color 0.1s;
 }
+
+.play-pause {
+  font-size: 20px;
+  color: rgb(255, 221, 38);
+}
+
+/* --- icon displaying --- */
 .pause {
-  color: #fff;
   display: none;
 }
 
@@ -84,16 +117,13 @@ body {
   display: block;
 }
 
-.play-pause {
-  font-size: 20px;
+.off {
+  display: none;
 }
 
-.rewind {
-  color: #fff;
-  font-size: 14px;
+.icon-switch .on {
+  display: none;
 }
-
-.fast-forward {
-  color: #fff;
-  font-size: 14px;
+.icon-switch .off {
+  display: block;
 }
