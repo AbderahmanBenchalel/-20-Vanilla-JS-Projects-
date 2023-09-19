@@ -89,3 +89,9 @@ body {
     width: 200px;
   }
 }
+@media (max-width: 300px) {
+  .amount-from,
+  .amount-to {
+    width: 150px;
+  }
+}
