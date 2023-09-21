@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"
+      defer
+    ></script>
+    <title>Modal menu slider</title>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav id="nav-list" class="nav-list">
+      <div class="logo">
+        <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="user" />
+      </div>
+
+      <ul>
+        <li id="home"><a href="#">Home</a></li>
+        <li id="portfolio"><a href="#">Portfolio</a></li>
+        <li id="blog"><a href="#">Blog</a></li>
+        <li id="contact-me"><a href="#">Contact Me</a></li>
+      </ul>
+
+      <button class="nav-btn">
+        <iconify-icon icon="ph:list-fill" style="color: white"></iconify-icon>
+      </button>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+      <h1 class="title">My Landing Page</h1>
+
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, amet!
+      </p>
+
+      <button class="cta-btn" id="sign-up-btn">Sign Up</button>
+    </header>
+
+    <!-- Main -->
+    <section class="main-section">
+      <h2>What is this landing page about?</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iure
+        accusamus ab consectetur eos provident ipsa est perferendis architecto.
+        Provident, quaerat asperiores. Quo esse minus repellat sapiente, impedit
+        obcaecati necessitatibus. Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Sapiente optio officia ipsa. Cum dignissimos possimus
+        et non provident facilis saepe!
+      </p>
+      <h2>Tell Me More</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eaque
+        delectus explicabo qui reprehenderit? Aspernatur ad similique minima
+        accusamus maiores accusantium libero autem iusto reiciendis ullam
+        impedit esse quibusdam, deleniti laudantium rerum beatae, deserunt nemo
+        neque, obcaecati exercitationem sit. Earum.
+      </p>
+      <h2>Benefits</h2>
+      <ul>
+        <li>Lifetime Access</li>
+        <li>30 Day Money Back</li>
+        <li>Tailored Customer Support</li>
+      </ul>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse quam
+        nostrum, fugiat, itaque natus officia laborum dolorum id accusantium
+        culpa architecto tenetur fuga? Consequatur provident rerum eius ratione
+        dolor officiis doloremque minima optio dignissimos doloribus odio
+        debitis vero cumque itaque excepturi a neque, expedita nulla earum
+        accusamus repellat adipisci veritatis quam. Ipsum fugiat iusto pariatur
+        consectetur quas libero dolor dolores dolorem, nostrum ducimus
+        doloremque placeat accusamus iste, culpa quaerat consequatur?
+      </p>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <div class="modal-header">
+          <h3>Sign Up</h3>
+          <button id="close" class="modal-close">
+            <iconify-icon icon="ion:close"></iconify-icon>
+          </button>
+        </div>
+
+        <p>Register with us to get offers, support and more</p>
+
+        <form class="modal-form">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Enter Name" />
+
+          <label for="email">Email</label>
+          <input id="email" type="text" placeholder="Enter Email" />
+
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Enter Password" />
+
+          <label for="confirme">Confirme Password</label>
+          <input
+            id="confirme"
+            type="password"
+            placeholder="Confirme Password"
+          />
+
+          <!-- <button class="submit">Submit</button> -->
+          <input
+            type="submit"
+            class="submit"
+            id="submit"
+            placeholder="Submit"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
