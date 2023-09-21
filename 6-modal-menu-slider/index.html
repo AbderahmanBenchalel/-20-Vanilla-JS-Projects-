@@ -13,25 +13,24 @@
   </head>
   <body>
     <!-- nav -->
-    <nav id="nav-list" class="nav-list">
+    <nav class="nav">
       <div class="logo">
         <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="user" />
       </div>
 
-      <ul>
+      <ul class="nav-list">
         <li id="home"><a href="#">Home</a></li>
         <li id="portfolio"><a href="#">Portfolio</a></li>
         <li id="blog"><a href="#">Blog</a></li>
         <li id="contact-me"><a href="#">Contact Me</a></li>
       </ul>
-
-      <button class="nav-btn">
-        <iconify-icon icon="ph:list-fill" style="color: white"></iconify-icon>
-      </button>
     </nav>
 
     <!-- Header -->
     <header class="header">
+      <button class="toggle-btn" id="toggle">
+        <iconify-icon icon="ph:list-fill" style="color: white"></iconify-icon>
+      </button>
       <h1 class="title">My Landing Page</h1>
 
       <p class="description">
@@ -48,9 +47,11 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iure
         accusamus ab consectetur eos provident ipsa est perferendis architecto.
         Provident, quaerat asperiores. Quo esse minus repellat sapiente, impedit
-        obcaecati necessitatibus. Lorem, ipsum dolor sit amet consectetur
-        adipisicing elit. Sapiente optio officia ipsa. Cum dignissimos possimus
-        et non provident facilis saepe!
+        obcaecati necessitatibus.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente optio
+        officia ipsa. Cum dignissimos possimus et non provident facilis saepe!
       </p>
       <h2>Tell Me More</h2>
       <p>
@@ -107,13 +108,7 @@
             placeholder="Confirme Password"
           />
 
-          <!-- <button class="submit">Submit</button> -->
-          <input
-            type="submit"
-            class="submit"
-            id="submit"
-            placeholder="Submit"
-          />
+          <button class="submit">Submit</button>
         </form>
       </div>
     </div>
