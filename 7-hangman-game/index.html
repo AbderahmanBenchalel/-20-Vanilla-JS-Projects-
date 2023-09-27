@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Hangman Game</title>
+  </head>
+  <body>
+    <h1 class="title">Hangman</h1>
+    <p class="instraction">Find the hidden word - Enter a letter</p>
+
+    <!-- Main container of the game -->
+    <!-- ------------------------------ -->
+    <div class="container">
+      <!--------- SVG --------->
+      <svg width="400" height="400" veiwbox="0 0 100 100">
+        <line x1="4" y1="220" x2="80" y2="220" />
+        <line x1="40" y1="220" x2="40" y2="10" />
+        <line x1="40" y1="10" x2="120" y2="10" />
+        <line x1="120" y1="10" x2="120" y2="40" />
+
+        <!-- Person -->
+        <circle class="head figure" cx="120" cy="60" r="20" />
+        <line class="body figure" x1="120" y1="80" x2="120" y2="140" />
+        <line class="leg figure" x1="120" y1="140" x2="100" y2="180" />
+        <line class="leg figure" x1="120" y1="140" x2="140" y2="180" />
+        <line class="arm figure" x1="120" y1="110" x2="140" y2="90" />
+        <line class="arm figure" x1="120" y1="110" x2="100" y2="90" />
+      </svg>
+      <!-- ------------------------------ -->
+    </div>
+    <!-- --------------------------------- -->
+
+    <!-- --------Worng Message--------- -->
+    <div class="message"></div>
+    <!-- --------------------------------- -->
+
+    <!-- --------Word and letters--------- -->
+    <div class="word" id="word"></div>
+    <!-- --------------------------------- -->
+
+    <!-- --------Notification-------------- -->
+    <div class="notification" id="notification">
+      <p>You have already entered this letter</p>
+    </div>
+    <!-- --------------------------------- -->
+
+    <!-- --------popup message-------------- -->
+    <div class="popup-container">
+      <div class="popup" id="popup">
+        <p>Unfortunately you lost. &#128533;</p>
+        <button>Play Again</button>
+      </div>
+    </div>
+    <!-- --------------------------------- -->
+  </body>
+</html>
