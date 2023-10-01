@@ -22,19 +22,19 @@
         <line x1="120" y1="10" x2="120" y2="40" />
 
         <!-- Person -->
-        <circle class="head figure" cx="120" cy="60" r="20" />
-        <line class="body figure" x1="120" y1="80" x2="120" y2="140" />
-        <line class="leg figure" x1="120" y1="140" x2="100" y2="180" />
-        <line class="leg figure" x1="120" y1="140" x2="140" y2="180" />
-        <line class="arm figure" x1="120" y1="110" x2="140" y2="90" />
-        <line class="arm figure" x1="120" y1="110" x2="100" y2="90" />
+        <circle class="head part figure" cx="120" cy="60" r="20" />
+        <line class="body part figure" x1="120" y1="80" x2="120" y2="140" />
+        <line class="arm part figure" x1="120" y1="110" x2="100" y2="90" />
+        <line class="arm part figure" x1="120" y1="110" x2="140" y2="90" />
+        <line class="leg part figure" x1="120" y1="140" x2="100" y2="180" />
+        <line class="leg part figure" x1="120" y1="140" x2="140" y2="180" />
       </svg>
       <!-- ------------------------------ -->
     </div>
     <!-- --------------------------------- -->
 
     <!-- --------Worng Message--------- -->
-    <div class="message"></div>
+    <div class="message" id="message"></div>
     <!-- --------------------------------- -->
 
     <!-- --------Word and letters--------- -->
@@ -48,10 +48,10 @@
     <!-- --------------------------------- -->
 
     <!-- --------popup message-------------- -->
-    <div class="popup-container">
+    <div class="popup-container" id="popup-container">
       <div class="popup" id="popup">
-        <p>Unfortunately you lost. &#128533;</p>
-        <button>Play Again</button>
+        <p></p>
+        <button id="play-agin">Play Again</button>
       </div>
     </div>
     <!-- --------------------------------- -->
