@@ -21,11 +21,11 @@ addEventListener("keydown", (event) => {
   if (popup.style.display === "flex" || event.code.slice(0, 3) !== "Key") {
     return;
   }
-  if (selectedLetters.includes(event.key)) {
+  if (selectedLetters.includes(event.key.toLowerCase())) {
     displayNotification();
     return;
   }
-  selectedLetters.push(event.key);
+  selectedLetters.push(event.key.toLowerCase());
   checkLetter(event.key);
 });
 
