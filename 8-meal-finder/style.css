@@ -7,9 +7,126 @@
 body {
   font-family: "rubik", sans-serif;
   background-color: #ebfbee;
+  color: #343a40;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   height: 100vh;
+  padding: 0 12px;
+  padding-top: 20px;
+}
+
+.search {
+  display: flex;
+  max-width: 100%;
+  border: 3px solid #fff;
+  border-radius: 4px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #fff;
+  margin-top: 16px;
+}
+.search input {
+  border: none;
+  padding: 8px 12px;
+  width: 300px;
+  max-width: 100%;
+}
+.search input:focus {
+  outline: none;
+}
+
+.search-btn,
+.random-meal-btn {
+  border: none;
+  background-color: #51cf66;
+  color: #fff;
+  font-size: 20px;
+  line-height: 0.8;
+  width: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.search-btn {
+  margin-right: 4px;
+}
+.search-btn:hover,
+.random-meal-btn:hover {
+  background-color: #37b24d;
+}
+
+/* ------- meals container --------- */
+.result-container {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.meal,
+.meal-photo {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border: 4px solid #ff922b;
+  border-radius: 6px;
+}
+
+.meal img,
+.meal-photo img {
+  width: 100%;
+}
+
+/* ---------single meal---------- */
+.single-meal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 750px;
+  max-width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.meal-photo {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.single-meal-info {
+  width: 100%;
+  border: 2px dashed #ff922b;
+  border-radius: 6px;
+  padding: 40px;
+  margin-top: 35px;
+}
+
+.single-meal-recipe {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.ingredients-title {
+  margin-top: 30px;
+}
+.ingredients {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  list-style: none;
+  max-width: 600px;
+}
+
+.ingredients li {
+  padding: 4px 8px;
+  background-color: #ff922b;
+  color: #fff;
+  border-radius: 8px;
 }
