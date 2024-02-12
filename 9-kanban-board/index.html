@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Board</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1 id="title">Kanban Board</h1>
+    <div class="container">
+      <div class="table" id="not-started">
+        <h2>Not Started</h2>
+        <ul class="task-list" id="not-started-list"></ul>
+        <button class="add" id="add-not-started-task">+ Add</button>
+      </div>
+
+      <div class="table" id="in-progress">
+        <h2>In Progress</h2>
+        <ul class="task-list" id="in-progress-list"></ul>
+        <button class="add" id="add-in-progress-task">+ Add</button>
+      </div>
+
+      <div class="table" id="completed">
+        <h2>Completed</h2>
+        <ul class="task-list" id="completed-list"></ul>
+        <!-- Writing (competeddd) is on purpose -> when changing droped task's id -->
+        <button class="add" id="add-completeddd-task">+ Add</button>
+      </div>
+    </div>
+    <!-- ------------------------------------ -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
