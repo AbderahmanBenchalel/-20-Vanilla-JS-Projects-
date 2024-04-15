@@ -1,6 +1,6 @@
 ### Kanban Board App
 
-Add tasks that you want to start, complete and that in progress
+The project is a task management app featuring categories for not started, in progress, and completed tasks, with drag-and-drop functionality between categories. Implemented using HTML, CSS, and JavaScript, the app is responsive and saves tasks locally, ensuring data persistence across sessions. [Demo](https://kanbanbenchalel.netlify.app/)
 
 ## Project features
 
